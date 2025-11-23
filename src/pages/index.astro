@@ -9,7 +9,7 @@ import Layout from '../layouts/Layout.astro';
 	<div class="relative min-h-screen overflow-hidden bg-[#171515] text-white">
 		<div
 			class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-			style={`background-image: url("/Landing%20hero.svg");`}
+			style={`background-image: url("/Landing%20hero.png");`}
 			aria-hidden="true"
 		></div>
 		<div class="absolute inset-0 bg-gradient-to-b from-black/55 via-black/35 to-black/65" aria-hidden="true"></div>
@@ -30,29 +30,22 @@ import Layout from '../layouts/Layout.astro';
 
 			<div class="flex flex-col items-center gap-6">
 				<a
-					href="#"
-					class="inline-flex items-center gap-2 rounded-full bg-[#FED000] px-8 py-3 text-base font-semibold text-black shadow-[0_12px_35px_rgba(254,208,0,0.35)] transition hover:translate-y-[-1px] hover:shadow-[0_16px_45px_rgba(254,208,0,0.45)] active:translate-y-0"
+					href="https://web3-thunder-finance-web.vercel.app/"
+					target="_blank"
+					rel="noreferrer"
+					class="inline-flex items-center gap-2 rounded-full bg-[#FED000] px-10 py-3.5 text-lg font-semibold text-black shadow-[0_12px_35px_rgba(254,208,0,0.35)] transition hover:translate-y-[-1px] hover:shadow-[0_16px_45px_rgba(254,208,0,0.45)] active:translate-y-0"
 				>
-					Join The MiniApp <span aria-hidden="true">🔥</span>
+					Join The MiniApp
+					<img src="/fire.svg" alt="" aria-hidden="true" class="h-5 w-5" loading="lazy" decoding="async" />
 				</a>
 				<a
-					href="https://github.com/"
+					href="https://github.com/web3thunderfinance"
+					target="_blank"
+					rel="noreferrer"
 					aria-label="GitHub"
-					class="flex h-12 w-12 items-center justify-center rounded-full bg-black/60 text-white transition hover:bg-black/80"
+					class="flex h-14 w-14 items-center justify-center rounded-full border border-white/30 bg-transparent text-white transition hover:border-white hover:bg-white/10"
 				>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 24 24"
-						fill="currentColor"
-						class="h-6 w-6"
-						aria-hidden="true"
-					>
-						<path
-							fill-rule="evenodd"
-							d="M12 2C6.477 2 2 6.555 2 12.185c0 4.494 2.865 8.31 6.839 9.66.5.098.683-.22.683-.487 0-.241-.009-.88-.014-1.727-2.78.615-3.366-1.37-3.366-1.37-.455-1.176-1.112-1.49-1.112-1.49-.909-.635.069-.622.069-.622 1.005.073 1.534 1.055 1.534 1.055.893 1.566 2.344 1.114 2.914.852.091-.662.35-1.115.636-1.372-2.22-.259-4.555-1.134-4.555-5.046 0-1.115.39-2.026 1.029-2.74-.104-.259-.446-1.303.098-2.714 0 0 .84-.27 2.75 1.047A9.343 9.343 0 0 1 12 7.577c.85.004 1.705.117 2.503.344 1.907-1.317 2.746-1.047 2.746-1.047.546 1.411.204 2.455.1 2.714.64.714 1.027 1.625 1.027 2.74 0 3.922-2.34 4.784-4.566 5.037.36.32.68.95.68 1.915 0 1.382-.013 2.496-.013 2.835 0 .27.18.588.688.488A10.02 10.02 0 0 0 22 12.185C22 6.555 17.523 2 12 2Z"
-							clip-rule="evenodd"
-						/>
-					</svg>
+					<img src="/github.svg" alt="" aria-hidden="true" class="h-6 w-6" loading="lazy" decoding="async" />
 				</a>
 			</div>
 		</main>
