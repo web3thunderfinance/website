@@ -45,9 +45,44 @@ import Layout from '../layouts/Layout.astro';
 					aria-label="GitHub"
 					class="flex h-14 w-14 items-center justify-center rounded-full border border-white/30 bg-transparent text-white transition hover:border-white hover:bg-white/10"
 				>
-					<img src="/github.svg" alt="" aria-hidden="true" class="h-6 w-6" loading="lazy" decoding="async" />
+					<img src="/github.svg" alt="" aria-hidden="true" class="h-8 w-8" loading="lazy" decoding="async" />
 				</a>
 			</div>
+
+			<section class="w-full max-w-4xl space-y-8 rounded-3xl border border-white/10 bg-black/40 p-8 text-left backdrop-blur">
+				<div class="space-y-3">
+					<p class="text-sm font-semibold uppercase tracking-[0.3em] text-[#FED000]/80">Details</p>
+					<p class="text-base leading-relaxed text-white/90">
+						An EVM-compatible privacy-focused mixer that deploys pooled legit deposits into external lending
+						markets (e.g. Aave) to earn real yield. After KYC, users deposit supported ERC20 stablecoins through
+						commitment-based privacy, accrue yield while funds are pooled, and later withdraw principal +
+						proportional yield using a secret (commitment/nullifier) flow. The destination wallet is also KYC'd
+						and the protocol is fully compliant with OFAC and other AML regulations.
+					</p>
+				</div>
+
+				<div class="space-y-3">
+					<p class="text-sm font-semibold uppercase tracking-[0.3em] text-[#FED000]/80">How Is It Made</p>
+					<p class="text-base leading-relaxed text-white/90">
+						Web3 Thunder Finance is built as an EVM-compatible yield mixer using Solidity 0.8.19 and the Foundry
+						framework. The core Web3ThunderFinanceMixer.sol pools user deposits and routes them into Aave V3 to
+						generate real yield while preserving privacy via a commitment/nullifier scheme. Deployments live on
+						Celo (Mainnet &amp; Alfajores) for low fees and fast finality, leveraging OpenZeppelin libraries for
+						security and CeloScan for verification. Yield accounting is intentionally lean—we track
+						totalPrincipal and infer yield from the rebasing aToken balance (yield = aTokenBalance -
+						totalPrincipal). The privacy layer currently prototypes a raw commitment map before introducing the
+						full ZK circuits (Circom, Merkle trees) so we can validate the yield flow first.
+					</p>
+				</div>
+
+				<div class="space-y-3">
+					<p class="text-sm font-semibold uppercase tracking-[0.3em] text-[#FED000]/80">Grants &amp; Equity</p>
+					<p class="text-base leading-relaxed text-white/90">
+						We are looking for grants or investment partners to keep shipping the protocol. Reach out on
+						Telegram: <span class="font-semibold">@jeffprestes</span>
+					</p>
+				</div>
+			</section>
 		</main>
 	</div>
 </Layout>
