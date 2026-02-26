@@ -28,9 +28,9 @@ import Layout from '../layouts/Layout.astro';
 				</p>
 			</div>
 
-			<div class="flex flex-col items-center gap-6">
-				<a
-					href="https://web3-thunder-finance-web.vercel.app/"
+				<div class="flex flex-col items-center gap-6">
+					<a
+						href="https://web3-thunder-finance-web.vercel.app/"
 					target="_blank"
 					rel="noreferrer"
 					class="inline-flex items-center gap-2 rounded-full bg-[#FED000] px-10 py-3.5 text-lg font-semibold text-black shadow-[0_12px_35px_rgba(254,208,0,0.35)] transition hover:translate-y-[-1px] hover:shadow-[0_16px_45px_rgba(254,208,0,0.45)] active:translate-y-0"
@@ -38,16 +38,25 @@ import Layout from '../layouts/Layout.astro';
 					Join The MiniApp
 					<img src="/fire.svg" alt="" aria-hidden="true" class="h-5 w-5" loading="lazy" decoding="async" />
 				</a>
-				<a
-					href="https://github.com/web3thunderfinance"
-					target="_blank"
-					rel="noreferrer"
-					aria-label="GitHub"
-					class="flex h-14 w-14 items-center justify-center rounded-full border border-white/30 bg-transparent text-white transition hover:border-white hover:bg-white/10"
-				>
-					<img src="/github.svg" alt="" aria-hidden="true" class="h-8 w-8" loading="lazy" decoding="async" />
-				</a>
-			</div>
+					<a
+						href="https://github.com/web3thunderfinance"
+						target="_blank"
+						rel="noreferrer"
+						aria-label="GitHub"
+						class="flex h-14 w-14 items-center justify-center rounded-full border border-white/30 bg-transparent text-white transition hover:border-white hover:bg-white/10"
+					>
+						<img src="/github.svg" alt="" aria-hidden="true" class="h-8 w-8" loading="lazy" decoding="async" />
+					</a>
+					<a
+						href="https://x.com/web3thunderfin"
+						target="_blank"
+						rel="noreferrer"
+						aria-label="X"
+						class="flex h-14 w-14 items-center justify-center rounded-full border border-white/30 bg-transparent text-xl font-semibold text-white transition hover:border-white hover:bg-white/10"
+					>
+						X
+					</a>
+				</div>
 
 			<section class="w-full max-w-4xl space-y-8 rounded-3xl border border-white/10 bg-black/40 p-8 text-left backdrop-blur">
 				<div class="space-y-3">
@@ -75,13 +84,24 @@ import Layout from '../layouts/Layout.astro';
 					</p>
 				</div>
 
-				<div class="space-y-3">
-					<p class="text-sm font-semibold uppercase tracking-[0.3em] text-[#FED000]/80">Grants &amp; Equity</p>
-					<p class="text-base leading-relaxed text-white/90">
-						We are looking for grants or investment partners to keep shipping the protocol. Reach out on
-						Telegram: <span class="font-semibold">@jeffprestes</span>
-					</p>
-				</div>
+					<div class="space-y-3">
+						<p class="text-sm font-semibold uppercase tracking-[0.3em] text-[#FED000]/80">Grants &amp; Equity</p>
+						<p class="text-base leading-relaxed text-white/90">
+							We are looking for grants or investment partners to keep shipping the protocol. Reach out via
+							<a class="font-semibold text-[#FED000] hover:underline" href="mailto:hello@web3thunder.finance">
+								hello@web3thunder.finance
+							</a>,
+							<a
+								class="font-semibold text-[#FED000] hover:underline"
+								href="https://x.com/web3thunderfin"
+								target="_blank"
+								rel="noreferrer"
+							>
+								@web3thunderfin
+							</a>
+							or Telegram: <span class="font-semibold">@jeffprestes</span>
+						</p>
+					</div>
 			</section>
 		</main>
 	</div>
